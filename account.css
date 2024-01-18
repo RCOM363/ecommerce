@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,body{
+    min-width: 100vw;
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    
+}
+
+body::-webkit-scrollbar{
+    display: none;
+    
+}
+
+/* Loader */
+.loaderWrapper{
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transition: 2s;
+}
+
+.fade{
+    opacity:0;
+    visibility: hidden;
+}
+.loader {
+    width: calc(80px / cos(45deg));
+    height: 14px;
+    background: repeating-linear-gradient(-45deg,orangered 0 15px,#0000 0 20px) left/200% 100%;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {
+      100% {background-position:right}
+  }
+
+/* signin */
+.cont1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* 
+background: #010101;
+background: linear-gradient(180deg, #010101, #FF4500); */
+
+}
+
+.sign{
+    flex-basis: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+    gap: 0.5em;
+    border: 2px solid #e3e3e3;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.sign .incont{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1em;
+    position:relative
+}
+
+.incont input{
+    flex-basis: 100%;
+    padding: 1em;
+    border-radius: 0.6em;
+    border: 2px solid black;
+}
+
+.incont label{
+    position: absolute;
+    top:6px;
+    left:15px;
+    padding: 4px;
+    pointer-events: none;
+    background-color: white;
+    color: gray;
+}
+
+
+.incont input:focus + label,
+.incont input:valid + label,
+.incont input:not(:placeholder-shown) + label{
+    top:-13px;
+    left:25px;
+    font-size: 0.8rem;
+    color: orangered;
+    transition: 0.2s ease-in;
+
+}
+
+.incont input:focus{
+    border-color: orangered;
+    background-color: white;
+    outline: none;
+}
+
+.incont input:-webkit-autofill,
+.incont input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s;
+}
+
+.sign button{
+    flex-basis: 100%;
+    padding: 0.75em;
+    font-size: 1rem;
+    border-radius: 0.6em;
+    background: linear-gradient(to bottom right, #FF4500, #FF9A5A);
+    color: white;
+    border: none;
+    outline: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.sign button:focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .sign button:hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+
+.sign .etxt{
+    flex-basis: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+    color: red;
+}
+
+.sign .hrcont{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.hrcont  hr{
+    width:10em;
+    height: 1px;
+    background-color: gray;
+    border: none;
+}
+
+.options{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em;
+    border: 2px solid grey;
+    border-radius: 0.6em;
+}
+
+.options svg{
+    width:5%;
+}
+
+.options:hover{
+    background-color: #dee2e6;
+}
+
+
+/* Responsive */
+
+@media(max-width:440px){
+
+    
+    
+    /* signin */
+    .cont1{
+        min-height: 80vh;
+    }
+
+    .sign{
+        width: 25em;
+    }
+
+
+}
