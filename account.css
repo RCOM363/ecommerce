@@ -56,7 +56,7 @@ body::-webkit-scrollbar{
 
 /* signin */
 .cont1{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     padding: 2em;
@@ -202,10 +202,15 @@ background: linear-gradient(180deg, #010101, #FF4500); */
     /* signin */
     .cont1{
         min-height: 80vh;
+        padding: 0;
     }
 
     .sign{
-        width: 25em;
+        width: 30em;
+    }
+
+    .hrcont hr{
+        width:7em;
     }
 
 

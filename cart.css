@@ -610,7 +610,7 @@ footer .cr{
     }
 
     .cardcont{
-        grid-template-columns: repeat(2,12em);
+        grid-template-columns: repeat(2,42vw);
     }
 
     .card1{

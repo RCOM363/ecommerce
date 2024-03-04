@@ -623,6 +623,7 @@ footer .cr{
 
     .srchbox, .fltrcont{
         flex-basis: 100%;
+        max-width:98vw;
     }
 
     .fltrcont{
@@ -630,7 +631,7 @@ footer .cr{
     }
 
     .fltr{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
 
@@ -640,7 +641,7 @@ footer .cr{
     }
 
     .cardcont{
-        grid-template-columns: repeat(2,13em);
+        grid-template-columns: repeat(2,50vw);
     }
 
     .card1{
