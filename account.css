@@ -27,33 +27,6 @@ body::-webkit-scrollbar{
     
 }
 
-/* Loader */
-.loaderWrapper{
-    position: fixed;
-    z-index: 9999;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    transition: 2s;
-}
-
-.fade{
-    opacity:0;
-    visibility: hidden;
-}
-.loader {
-    width: calc(80px / cos(45deg));
-    height: 14px;
-    background: repeating-linear-gradient(-45deg,orangered 0 15px,#0000 0 20px) left/200% 100%;
-    animation: l3 1s infinite linear;
-  }
-  @keyframes l3 {
-      100% {background-position:right}
-  }
-
 /* signin */
 .cont1{
     width: 100vw;

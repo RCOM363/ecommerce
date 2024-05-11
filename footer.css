@@ -1,0 +1,238 @@
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    gap: 2em;
+    padding: 1em;
+    overflow: hidden;
+}
+
+footer .logo{
+    flex-basis: 100%;
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+}
+
+footer .logo h3{
+    text-align: center;
+}
+.box{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    font-size: 0.9rem;
+    /* border: 1px solid white; */
+}
+
+
+.nwsltr{
+    flex-basis: 30%;
+    margin:0.5em;
+}
+
+.cs,.cnt{
+    flex-basis: 20%;
+    margin:0.5em;
+}
+
+.ql{
+    flex-basis: 10%;
+    margin:0.5em;
+
+}
+
+footer ul{
+    list-style: none;
+    display: inline-block;
+}
+
+footer li{
+    display: inline-block;
+    margin:0.5em;
+    font-size: 1rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    transition:all 0.2s ease-in-out;
+}
+
+footer a:hover{
+    color: orangered;
+}
+
+
+.ql li,.cs li{
+    display: block;
+    margin:0.5em;
+    font-size: 1rem;
+}
+
+.nwsltr input{
+    border: none;
+    background-color: #1B1B1B;
+    padding:0.8em;
+    border-radius: 0.6em;
+    margin:1em 0.5em 1em 0;
+}
+
+.nwsltr button{
+    border: none;
+    padding:0.8em;
+    /* background-color: orangered; */
+    background: linear-gradient(to bottom right, #FF4500, #FF9A5A);
+    color: white;
+    font-weight: bold;
+    border-radius: 0.6em;
+    outline: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.nwsltr button:focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+.nwsltr button:hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+footer .cr{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media(max-width:1024px){
+    footer .logo h3{
+        font-size:3rem;
+    }
+
+    .box{
+        flex-basis: 95%;
+    }
+    
+}
+
+@media(max-width:768px){
+    
+    footer .logo h3{
+        font-size:2rem;
+    }
+
+    .box{
+        flex-basis: 100%;
+        font-size: 0.8rem;
+    }
+
+    .box h3{
+        font-size: 0.8rem;
+    }
+
+    .box a{
+        font-size:0.8rem;
+    }
+
+    .ql{
+        flex-basis: 15%;
+    }
+
+    .nwsltr{
+        flex-basis: 38%;
+    }
+
+    footer .cr{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:640px){
+    
+    footer .logo h3{
+        font-size:2rem;
+    }
+
+    .box{
+        flex-basis: 100%;
+        font-size: 0.6rem;
+    }
+
+    .box h3{
+        font-size: 0.6rem;
+    }
+
+    .box a{
+        font-size:0.6rem;
+    }
+
+
+    .nwsltr{
+        flex-basis: 38%;
+    }
+
+    .nwsltr input{
+        width: 15em;
+        height: 3em;
+        font-size: 0.6rem;
+    }
+
+    .nwsltr button{
+        height: 3em;
+        width: 6em;
+        font-size: 0.6rem;
+    }
+
+    footer .cr{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:440px){
+    footer{
+        flex-wrap: wrap;
+    }
+
+    footer .logo{
+        font-size: 2rem;
+    }
+
+    .box{
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        font-size: 1rem;
+
+    }
+
+    
+    .box h3{
+        font-size: 1rem;
+    }
+    
+    .ql, .cs{
+        display: none;
+    }
+
+    .box a{
+        font-size: 1rem;
+    }
+
+    .nwsltr, .cnt{
+        flex-basis: 100%;
+    }
+
+    footer .cr{
+        font-size: 0.8rem;
+    }
+
+    
+}
